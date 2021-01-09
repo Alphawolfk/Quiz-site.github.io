@@ -1,6 +1,6 @@
 # quick-quiz-app
 
-https://alphawolfk.github.io/quick-quiz-app.github.io/
+https://alphawolfk.github.io/Quiz-site.github.io/
 
 
 Uses https://opentdb.com/ api for getting the questions,
