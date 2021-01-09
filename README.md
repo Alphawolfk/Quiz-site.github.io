@@ -1,4 +1,4 @@
-# quick-quiz-app
+# Quiz-site
 
 https://alphawolfk.github.io/Quiz-site.github.io/
 
