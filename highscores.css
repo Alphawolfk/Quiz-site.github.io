@@ -21,4 +21,6 @@
 }
 #finalScore{
     margin-bottom: 1rem;
+    justify-content: center;
+    text-align: center;
 }
