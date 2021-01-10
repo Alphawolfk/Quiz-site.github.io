@@ -31,7 +31,7 @@ function saveHighScore(e) {
     highScores.sort((a, b) => b.score - a.score)
     highScores.splice(5);
 
-    localStorage.setItem("highScores", JSON .stringify(highScores));
+    localStorage.setItem("highScores", JSON.stringify(highScores));
 
     savedText.classList.remove("hidden");
     setTimeout(() => {

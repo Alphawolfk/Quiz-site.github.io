@@ -17,9 +17,14 @@ let availableQuestions = [];
 
 let questions = [];
 
-fetch(
-        'https://opentdb.com/api.php?amount=10&category=22&type=multiple'
-    )
+
+//geo,history,video games,computers
+
+fetch(['https://opentdb.com/api.php?amount=10&category=22&type=multiple',
+        'https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple',
+        'https://opentdb.com/api.php?amount=10&category=23&difficulty=easy&type=multiple',
+        'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple'
+    ])
     .then((res) => {
         return res.json();
     })
