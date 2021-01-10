@@ -25,7 +25,10 @@ var myArray = ['https://opentdb.com/api.php?amount=10&category=22&type=multiple'
 'https://opentdb.com/api.php?amount=10&category=27&difficulty=easy&type=multiple',
 'https://opentdb.com/api.php?amount=10&category=21&difficulty=easy&type=multiple',
 'https://opentdb.com/api.php?amount=10&category=17&difficulty=easy&type=multiple',
-'https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple'
+'https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple',
+'https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple',
+'https://opentdb.com/api.php?amount=10&category=18&difficulty=medium&type=multiple',
+'https://opentdb.com/api.php?amount=10&category=30&difficulty=easy&type=multiple'
 ];
 
 var randomLink = myArray[Math.floor(Math.random()*myArray.length)];
