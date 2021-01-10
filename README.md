@@ -1,6 +1,7 @@
 # Quiz-site
 [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
 ![GitHub issues](https://img.shields.io/github/issues-raw/Alphawolfk/Quiz-site.github.io)
+![GitHub last commit](https://img.shields.io/github/last-commit/Alphawolfk/Quiz-site.github.io)
 
 https://alphawolfk.github.io/Quiz-site.github.io/
 
