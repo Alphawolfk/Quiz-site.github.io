@@ -10,6 +10,7 @@ https://alphawolfk.github.io/quick-quiz/
 Uses https://opentdb.com/ api for getting the questions,
 
 This is just for learning (original source https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw)
+I added some more features to the quiz
 
 - :heavy_check_mark: Add a timer
 - :heavy_check_mark: Show the Correct Answer
