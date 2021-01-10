@@ -18,15 +18,19 @@ let availableQuestions = [];
 
 let questions = [];
 
+var myArray = ['https://opentdb.com/api.php?amount=10&category=22&type=multiple',
+'https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple',
+'https://opentdb.com/api.php?amount=10&category=23&difficulty=easy&type=multiple',
+'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple',
+'https://opentdb.com/api.php?amount=10&category=27&difficulty=easy&type=multiple',
+'https://opentdb.com/api.php?amount=10&category=21&difficulty=easy&type=multiple',
+'https://opentdb.com/api.php?amount=10&category=17&difficulty=easy&type=multiple',
+'https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple'
+];
 
-//geo,history,video games,computers
+var randomLink = myArray[Math.floor(Math.random()*myArray.length)];
 
-fetch(['https://opentdb.com/api.php?amount=10&category=22&type=multiple',
-        'https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple',
-        'https://opentdb.com/api.php?amount=10&category=23&difficulty=easy&type=multiple',
-        'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple',
-        'https://opentdb.com/api.php?amount=10&category=27&difficulty=easy&type=multiple'
-    ])
+fetch(randomLink)
     .then((res) => {
         return res.json();
     })
