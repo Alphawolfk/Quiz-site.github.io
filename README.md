@@ -1,5 +1,5 @@
 # Quiz-site
-https://badge.fury.io/js/npm.svg
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
 https://alphawolfk.github.io/Quiz-site.github.io/
 
 
