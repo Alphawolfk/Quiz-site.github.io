@@ -1,5 +1,5 @@
 # Quiz-site
-
+https://badge.fury.io/js/npm.svg
 https://alphawolfk.github.io/Quiz-site.github.io/
 
 
