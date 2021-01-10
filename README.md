@@ -4,7 +4,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Alphawolfk/Quiz-site.github.io)
 [![made-using-Javascript](https://img.shields.io/badge/Made%20using-Javascript-1f425f.svg)](https://GitHub.com/Alphawolfk/Quiz-site.github.io)
 
-https://alphawolfk.github.io/Quiz-site.github.io/
+https://alphawolfk.github.io/quick-quiz/
 
 
 Uses https://opentdb.com/ api for getting the questions,
