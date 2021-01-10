@@ -1,2 +1,3 @@
 #questions.json
-questions.json
+*.json
+.gitignore
