@@ -13,4 +13,4 @@ This is just for learning (original source https://www.youtube.com/channel/UC-T8
 
 - :heavy_check_mark: Add a timer
 - :heavy_check_mark: Show the Correct Answer
-- [ ] fix the text issue
+- :x: fix the text issue
