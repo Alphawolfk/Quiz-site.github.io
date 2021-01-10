@@ -12,5 +12,5 @@ Uses https://opentdb.com/ api for getting the questions,
 This is just for learning (original source https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw)
 
 - :heavy_check_mark: Add a timer
-- [x] Show the Correct Answer
+- :heavy_check_mark: Show the Correct Answer
 - [ ] fix the text issue
