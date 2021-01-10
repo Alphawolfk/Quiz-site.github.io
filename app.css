@@ -11,7 +11,7 @@
     color: #333;
 }
 
-#footer {
+.footer {
     color: #82afd6;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
@@ -21,7 +21,7 @@
     text-shadow: #000000 1.5px 1.5px 5px;
 }
 
-#footer:hover{
+.footer:hover{
     transform: translate(0.2rem, -0.3rem);
 }
 
@@ -115,9 +115,11 @@ h6 {
     border: 0.1rem solid #56a5eb;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #56a5eb;
+    color: #529ddf;
     background-color: white;
+    text-shadow: 1.2px 1.2px 2.5px;
     box-shadow: 1px 1px 5px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .btn:hover {
