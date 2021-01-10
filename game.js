@@ -90,10 +90,47 @@ function getNewQuestion() {
     acceptingAnswers = true;
 };
 
+
+var timer;
+var myTimer;
+var minutes, seconds;
+
+function startTimer(duration, display) {
+    timer = duration
+
+    myTimer = setInterval(function () {
+
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+            getNewQuestion();
+        }
+    }, 1000);
+}
+
+var fiveMinutes = 60 * 1.5;
+var display = document.querySelector('#time');
+window.onload = function () {
+
+    startTimer(fiveMinutes, display);
+}
+
+function resetTimer() {
+    clearInterval(myTimer);
+    startTimer(fiveMinutes, display);
+
+}
+
+
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if (!acceptingAnswers) return;
-
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
@@ -109,11 +146,12 @@ choices.forEach(choice => {
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
+            resetTimer();
         }, 1000);
     });
-});
 
-function incrementScore(num) {
-    score += num;
-    scoreText.innerText = score;
-}
+    function incrementScore(num) {
+        score += num;
+        scoreText.innerText = score;
+    }
+});

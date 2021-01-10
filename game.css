@@ -81,3 +81,19 @@ color: white;
         transform: rotate(360deg);
     }
 }
+
+#time{
+    font-size: 3rem;
+    color:#5eb4ff;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+    color: #56a5eb;
+    justify-content: center;
+    align-items: center;
+}
