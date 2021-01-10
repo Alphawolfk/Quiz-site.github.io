@@ -27,11 +27,11 @@ color: white;
 }
 
 .correct{
-    background-color: #28a745;
+    background-color: #30c753;
 }
 
 .incorrect{
-    background-color: #dc3545;
+    background-color: #fb3e51;
 }
 
 
@@ -96,4 +96,15 @@ color: white;
     color: #56a5eb;
     justify-content: center;
     align-items: center;
+}
+
+#correctAnswer {
+    color: #56a5eb;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#myspan {
+    color: #5eb4ff;
 }

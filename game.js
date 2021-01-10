@@ -7,6 +7,7 @@ const scoreText = document.getElementById('score');
 
 const progressBarFull = document.getElementById('progressBarFull');
 
+
 const loader = document.getElementById('loader');
 const game = document.getElementById('game');
 let currentQuestion = {};
@@ -23,7 +24,8 @@ let questions = [];
 fetch(['https://opentdb.com/api.php?amount=10&category=22&type=multiple',
         'https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple',
         'https://opentdb.com/api.php?amount=10&category=23&difficulty=easy&type=multiple',
-        'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple'
+        'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple',
+        'https://opentdb.com/api.php?amount=10&category=27&difficulty=easy&type=multiple'
     ])
     .then((res) => {
         return res.json();
@@ -45,8 +47,8 @@ fetch(['https://opentdb.com/api.php?amount=10&category=22&type=multiple',
             answerChoices.forEach((choice, index) => {
                 formattedQuestion['choice' + (index + 1)] = choice;
             });
-
             return formattedQuestion;
+
         });
 
         startGame();
@@ -141,6 +143,8 @@ choices.forEach(choice => {
         const selectedAnswer = selectedChoice.dataset["number"];
 
         const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+        console.log(currentQuestion.answer);
+        document.getElementById("myspan").innerHTML = currentQuestion.answer;
 
         if (classToApply == 'correct') {
             incrementScore(CORRECT_BONUS);
@@ -148,11 +152,14 @@ choices.forEach(choice => {
 
         selectedChoice.parentElement.classList.add(classToApply);
 
+        correctAnswer.classList.remove("hidden");
+
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
+            correctAnswer.classList.add("hidden");
             resetTimer();
-        }, 1000);
+        }, 1500);
     });
 
     function incrementScore(num) {
